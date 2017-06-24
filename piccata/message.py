@@ -4,11 +4,13 @@ Copyright (c) 2012 Maciej Wasilak <http://sixpinetrees.blogspot.com/>
 
 CoAP message implementation.
 """
+from __future__ import absolute_import
+
 import struct
-import option
 import os
 
-from piccata.constants import EMPTY, MAX_TRANSMIT_WAIT, ACK, RST, MAX_TOKEN_LENGTH
+from . import option
+from .constants import EMPTY, MAX_TRANSMIT_WAIT, ACK, RST, MAX_TOKEN_LENGTH
     
 class Message(object):
     """A CoAP Message."""

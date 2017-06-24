@@ -5,10 +5,12 @@ Copyright (c) 2012 Maciej Wasilak <http://sixpinetrees.blogspot.com/>
 CoAP block transfer helper functions.
 """
 
+from __future__ import absolute_import
+
 import piccata
 
-from constants import *
-from message import Message
+from .constants import *
+from .message import Message
 
 def extract_block(data, number, size_exp):
     size = size_exp_to_size(size_exp)

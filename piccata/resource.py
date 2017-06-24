@@ -5,10 +5,13 @@ Copyright (c) 2012 Maciej Wasilak <http://sixpinetrees.blogspot.com/>
 Implementation of the lowest-level Resource class.
 """
 
-import message
-from constants import *
+from __future__ import absolute_import
+
 from itertools import chain
-from types import NoResource, UnallowedMethod, UnsupportedMethod
+
+from . import message
+from .constants import *
+from .types import NoResource, UnallowedMethod, UnsupportedMethod
 
 class CoapResource(object):
     """CoAP-accessible resource."""

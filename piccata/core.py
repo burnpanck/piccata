@@ -4,15 +4,17 @@ Copyright (c) 2012 Maciej Wasilak <http://sixpinetrees.blogspot.com/>
 
 CoAP protocol implementation.
 """
+from __future__ import absolute_import
+
 import random
 import logging
 import os
 from threading import Timer
 from ipaddress import ip_address
 
-from constants import *
-from message import Message
-from types import Endpoint
+from .constants import *
+from .message import Message
+from .types import Endpoint
 
 
 class _CoapMessageLayer(object):

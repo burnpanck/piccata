@@ -4,12 +4,14 @@ Copyright (c) 2012 Maciej Wasilak <http://sixpinetrees.blogspot.com/>
 
 CoAP option processing.
 """
+from __future__ import absolute_import
+
 import collections
 import struct
 from itertools import chain
 from abc import ABCMeta, abstractmethod
 
-from constants import *
+from .constants import *
 
 class Options(object):
     """Represent CoAP Header Options."""
